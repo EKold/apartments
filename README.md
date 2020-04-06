@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the CRUD Application for The ruby on rails project.
+I couldn't get bootstrap to work on my pc, so instead I added a second CRUD object which lets the user put in tenants into each of the apartments that they create.
 
-Things you may want to cover:
 
-* Ruby version
+* Ruby version 6.0.0
 
 * System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Uses sql lite database
