@@ -1,0 +1,27 @@
+
+<%= form_for([@apartment, @apartment.tenants.build]) do |f| %>
+    <p>
+        <%= f.label :name %><br>
+        <%= f.text_field(:name, {:class => 'form-control'} ) %>
+    </p>
+    
+    <p>
+        <%= f.label :email %><br>
+        <%= f.text_area( :email, {:class => 'form-control'} )%>
+    </p>
+
+    <p>
+        <%= f.label :rent %><br>
+        <%= f.text_field(:rent, {:class => 'form-control'} ) %>
+    </p>
+    
+    <p>
+        <%= f.label :living_here_next_year %><br>
+        <%= f.check_box( :living_here_next_year, {:class => 'form-control'} ) %>
+        
+    </p>
+
+    <p>
+        <%= f.submit({:class => 'btn btn-defualt'}) %>
+    </p>
+<% end %>

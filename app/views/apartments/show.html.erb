@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Rooms:</strong>
+  <%= @apartment.rooms %>
+</p>
+
+<p>
+  <strong>Available space:</strong>
+  <%= @apartment.available_space %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @apartment.address %>
+</p>
+
+<div class="tenants">
+  <h2> Tenants Listed Below</h2>
+  <%= render @apartment.tenants %>
+  <div class="add-tenant">
+    <hr />
+    <h3>Add Tenant</h3>
+    <%= render 'tenants/form'%>
+  </div>
+</div>
+
+<%= link_to 'Edit', edit_apartment_path(@apartment) %> |
+<%= link_to 'Back', apartments_path %>

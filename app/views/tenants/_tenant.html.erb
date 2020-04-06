@@ -1,0 +1,12 @@
+<div class="content">
+    <p>
+        Name: <%= tenant.name %>
+        <br>
+        Email: <%= tenant.email%>
+        <br>
+        Rent price per month in USD: <%= tenant.rent %>
+        <br>
+        Living here next year: <%= tenant.living_here_next_year%>
+    </p>
+    <%= link_to "Remove", apartment_tenant_path(@apartment, tenant.id), method: :delete, data: { confirm: "Are you sure?" } %>
+</div>
